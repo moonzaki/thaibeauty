@@ -16,7 +16,8 @@
             text-transform: uppercase;
 
             @include font-size(40px);
-                        
+            color: $tb-gold;
+
             @media screen and (min-width: 1921px) {
                 @include vw-font-size(40, 1920, 1);
             }
@@ -24,9 +25,11 @@
 
         &__link {
             text-decoration: none;
-
+            font-family: 'RobotoCondensed', sans-serif;
+            font-weight: bold;
+            color: black;
             @include font-size(25px);
-                        
+
             @media screen and (min-width: 1921px) {
                 @include vw-font-size(25, 1920, 1);
             }
@@ -39,10 +42,10 @@
             @media screen and (min-width: 1921px) {
                 max-width: 69.75%;
             }
-    
+
             img {
                 width: 100%;
-                height: auto;            
+                height: auto;
             }
         }
     }

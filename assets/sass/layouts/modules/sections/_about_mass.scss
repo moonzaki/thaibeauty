@@ -3,20 +3,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-     
+
         &__ending {
-            padding: 0 24px; 
+            padding: 0 24px;
             background: #b39658;
             color: white;
             line-height: 1.5;
             @include font-size(22px);
             box-sizing: border-box;
-            
+
             @media screen and(min-width: 1921px) {
                 @include vw-font-size(22, 1920, 1);
             }
 
-            @media screen and (max-width: 767px){
+            @media screen and (max-width: 767px) {
                 color: black;
             }
         }
@@ -26,49 +26,53 @@
 .tb-about-mass-box__item {
     padding: 0 20px;
     box-sizing: border-box;
+
     &-text {
-        
+
         &-title {
             width: 100%;
-            
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
             line-height: 1.5;
             @include font-size(30px);
-            
+
             @media screen and(min-width: 1921px) {
                 @include vw-font-size(30, 1920, 1);
             }
         }
-        
+
         &-description {
             width: 100%;
-            
+            font-family: 'Roboto', sans-serif;
+            font-weight: regular;
             line-height: 1.5;
             @include font-size(22px);
-            
+
             @media screen and(min-width: 1921px) {
                 @include vw-font-size(22, 1920, 1);
             }
         }
-        
+
         &-list {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             width: 100%;
-            
+
             line-height: 1.5;
             @include font-size(22px);
             box-sizing: border-box;
+
             @media screen and(min-width: 1921px) {
                 @include vw-font-size(22, 1920, 1);
             }
-            
+
             &-item {
                 width: 50%;
                 padding: 0 1em;
                 box-sizing: border-box;
-                
-                @media screen and (max-width: 767px){
+
+                @media screen and (max-width: 767px) {
                     width: 100%;
 
                     p {
@@ -82,7 +86,7 @@
             }
         }
     }
-    
+
     &--add-img {
         display: flex;
         flex-direction: row;
@@ -91,21 +95,21 @@
 
         .tb-about-mass-box__item-img {
             width: 50%;
-            
+
             img {
                 width: 100%;
                 height: auto;
             }
 
-            @media screen and (max-width: 767px){
+            @media screen and (max-width: 767px) {
                 @include vis_off;
             }
         }
-        
+
         .tb-about-mass-box__item-text {
             width: 50%;
 
-            @media screen and (max-width: 767px){
+            @media screen and (max-width: 767px) {
                 width: 100%;
             }
         }

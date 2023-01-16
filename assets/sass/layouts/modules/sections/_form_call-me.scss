@@ -3,15 +3,16 @@
     &-box {
         display: flex;
         flex-direction: row;
-        
+
         &__item {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             width: 50%;
 
             @media screen and (max-width: 1023px) {
-                width: 100%;    
+                width: 100%;
             }
 
             &-form {
@@ -25,6 +26,7 @@
                 @media screen and (min-width: 1921px) {
                     gap: 1.1vw;
                 }
+
                 @media screen and (max-width: 430px) {
                     padding: 11px;
                 }
@@ -34,7 +36,7 @@
             &-img {
                 width: 100%;
 
-                
+
                 img {
                     width: 100%;
                     height: auto;
@@ -51,7 +53,7 @@
         margin: 0;
         text-transform: uppercase;
         @include font-size(30px);
-        
+
         @media screen and (min-width: 1921px) {
             // max-width: 75.8%;
             min-width: 420px;
@@ -59,13 +61,15 @@
             @include vw-font-size(30, 1920, 1);
         }
     }
-    
+
     &__subtitle {
         max-width: 420px;
         width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: regular;
         font-style: italic;
         @include font-size(25px);
-        
+
         @media screen and (min-width: 1921px) {
             // max-width: 75.8%;
             min-width: 420px;
@@ -81,18 +85,22 @@
     label {
         max-width: 420px;
         width: 100%;
-        
+
         @media screen and (min-width: 1921px) {
             // max-width: 75.8%;
             min-width: 420px;
             max-width: 100%;
         }
-        
 
-        
         .tb-f-name {
             width: 100%;
             height: 60px;
+            text-align: center;
+            padding: 0 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: regular;
+            color: black;
+            @include font-size(25px);
             border: none;
             box-sizing: border-box;
             border-radius: 2.5vw;
@@ -100,10 +108,11 @@
             -moz-border-radius: 2.5vw;
             -ms-border-radius: 2.5vw;
             -o-border-radius: 2.5vw;
-            
-            
+
+
             @media screen and(min-width: 1921px) {
                 height: 3vw;
+                @include vw-font-size(25, 1920, 1);
             }
 
             @media screen and (max-width: 1023px) {
@@ -121,8 +130,12 @@
             &::placeholder {
                 display: block;
                 text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-weight: regular;
+                color: black;
+
                 @include font-size(25px);
-                
+
                 @media screen and (min-width: 1921px) {
                     @include vw-font-size(25, 1920, 1);
                 }
@@ -130,8 +143,16 @@
         }
 
         .tb-f-mobile {
+            display: block;
             width: 100%;
             height: 60px;
+            padding: 0 20px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: regular;
+            color: black;
+            @include font-size(25px);
+
             border: none;
             box-sizing: border-box;
             border-radius: 2.5vw;
@@ -139,9 +160,10 @@
             -moz-border-radius: 2.5vw;
             -ms-border-radius: 2.5vw;
             -o-border-radius: 2.5vw;
-            
+
             @media screen and (min-width: 1921px) {
                 height: 3vw;
+                @include vw-font-size(25, 1920, 1);
             }
 
             @media screen and (max-width: 1023px) {
@@ -150,7 +172,7 @@
                 -moz-border-radius: 30px;
                 -ms-border-radius: 30px;
                 -o-border-radius: 30px;
-}
+            }
 
             &:focus-visible {
                 outline: none;
@@ -159,22 +181,28 @@
             &::placeholder {
                 display: block;
                 text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-weight: regular;
+                color: black;
+
                 @include font-size(25px);
-                
+
                 @media screen and (min-width: 1921px) {
                     @include vw-font-size(25, 1920, 1);
                 }
             }
         }
-        
+
     }
+
     .confidencial {
         display: flex;
         flex-direction: row;
         justify-content: center;
-
+        font-family: 'Roboto', sans-serif;
+        font-weight: regular;
         @include font-size(18px);
-                        
+
         @media screen and (min-width: 1921px) {
             @include vw-font-size(18, 1920, 1);
         }
@@ -192,11 +220,17 @@
         a {
             color: $tb-gold;
         }
+
+        p {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
     }
 }
 
-.tb-form-call-me-box__item.tb-form-call-me-box__item--add-img {        
+.tb-form-call-me-box__item.tb-form-call-me-box__item--add-img {
     @media screen and (max-width: 1023px) {
-        display: none;    
+        display: none;
     }
 }

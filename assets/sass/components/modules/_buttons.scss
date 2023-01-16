@@ -10,8 +10,12 @@
     -ms-border-radius: 2.5vw;
     -o-border-radius: 2.5vw;
     text-transform: uppercase;
+    font-family: 'RobotoCondensed', sans-serif;
+    font-weight: bold;
+    font-stretch: condensed;
     @include font-size(25px);
     color: $tb-gold;
+
     &--call-me {
         max-width: 100%;
         background: $tb-gold;

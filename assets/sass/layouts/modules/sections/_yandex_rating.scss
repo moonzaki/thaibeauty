@@ -14,39 +14,42 @@
             text-align: center;
             border: none;
         }
+
         &__img {
             width: 50%;
 
-            @media screen and (max-width: 680px){
+            @media screen and (max-width: 680px) {
                 width: 100%;
             }
-            
+
             img {
                 max-width: 385px;
                 display: block;
                 width: 100%;
                 height: auto;
                 margin: 0 auto;
-                
+
                 @media screen and (min-width: 1921px) {
                     max-width: 69.75%;
                     min-width: 385px;
                 }
             }
         }
-        
+
         &__text {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 50%;
-            
+            font-family: 'Roboto', sans-serif;
+            font-weight: regular;
             @include font-size(27px);
-            
+
             @media screen and(min-width: 1921px) {
                 @include vw-font-size(27, 1920, 1);
             }
-            @media screen and (max-width: 680px){
+
+            @media screen and (max-width: 680px) {
                 width: 100%;
             }
         }

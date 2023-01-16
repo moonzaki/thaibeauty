@@ -5,10 +5,12 @@
     // background-repeat: no-repeat;
 
     &__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
         text-align: center;
 
         @include font-size(36px);
-                        
+
         @media screen and (min-width: 1921px) {
             @include vw-font-size(36, 1920, 1);
         }
@@ -29,7 +31,7 @@
         background-position: top;
         background-size: cover;
         z-index: -1;
-        
+
         @media screen and (min-width: 1921px) {
             height: 180%;
             min-height: 856px;
@@ -37,37 +39,38 @@
             background-repeat: no-repeat;
             background-position: top;
             background-size: cover;
-            
+
         }
     }
 }
 
 .tb-effects-block {
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: regular;
     @include font-size(22px);
-    line-height: 1.5;      
+    line-height: 1.5;
+
     @media screen and (min-width: 1921px) {
         @include vw-font-size(22, 1920, 1);
     }
 
-    
+
 
     &__content {
         display: flex;
         flex-direction: row;
         gap: 20px;
         width: 100%;
-        
+
         @media screen and (max-width: 930px) {
             flex-direction: column;
         }
-        
-        @media screen and (max-width: 930px) {
-            
-        }
+
+        @media screen and (max-width: 930px) {}
+
         &-item {
             width: 50%;
-            
+
             @media screen and (max-width: 930px) {
                 width: 100%;
                 justify-content: center;
@@ -76,6 +79,7 @@
                 text-align: center;
                 box-sizing: border-box;
             }
+
             @media screen and (max-width: 680px) {
                 text-align: left;
             }
@@ -83,31 +87,34 @@
             &-img {
                 max-width: 536px;
                 width: 100%;
-                
+
                 @media screen and (min-width: 1921px) {
                     min-width: 536px;
                     max-width: unset;
                 }
+
                 @media screen and (max-width: 930px) {
                     margin: 0 auto;
                 }
+
                 @media screen and (max-width: 680px) {
                     @include vis_off;
                 }
+
                 img {
                     width: 100%;
                     height: auto;
                 }
             }
-        
+
             p {
                 margin: 0;
 
 
             }
         }
-        
-        
+
+
         &--reverse {
             flex-direction: row-reverse;
             width: 100%;
@@ -126,20 +133,25 @@
         align-items: center;
         width: 100%;
 
+        font-family: 'RobotoCondensed', sans-serif;
+        font-weight: bold;
+        @include font-size(25px);
+        font-stretch: condensed;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(25, 1920, 1);
+        }
+
         @media screen and (max-width: 930px) {
             flex-direction: column-reverse;
             justify-content: center;
             text-align: center;
         }
 
-        @include font-size(25px);
-        @media screen and (min-width: 1921px) {
-            @include vw-font-size(25, 1920, 1);
-        }
-        
         &-item {
             width: 33.33%;
-            
+
             @media screen and (max-width: 930px) {
                 width: 100%;
             }

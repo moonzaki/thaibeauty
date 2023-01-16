@@ -5,22 +5,27 @@
         position: absolute;
         content: '';
         width: 100%;
-        height: 50%;
+        height: 75%;
         bottom: 0;
         background: $tb-gold;
-        
+
         @media screen and (max-width: 1023px) {
             width: 0;
         }
     }
-    
-    
+
+
     .after--box {
         position: absolute;
         content: '';
         width: 100%;
-        height: 50%;
-        top: 0;
+        height: 85%;
+        top: -60%;
+        z-index: -1;
+
+        @media screen and (max-width: 519px) {
+            top: 0;
+        }
 
         &::after {
             position: absolute;
@@ -39,12 +44,12 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
-                height: 130%;
+                height: 140%;
                 top: 0;
             }
 
             @media screen and (max-width: 639px) {
-                height: 100%;
+                height: 140%;
             }
 
             @media screen and (max-width: 519px) {
@@ -59,16 +64,18 @@
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        padding: 30% 0 0 0;
+        // padding: 30% 0 0 0;
         box-sizing: border-box;
 
         @media screen and(max-width: 1023px) {
             flex-direction: column;
             padding: 0;
+
             &__item:nth-child(1) {
                 justify-content: center;
                 align-self: center;
             }
+
             &__item:nth-child(2) {
                 width: 100%;
                 background: $tb-gold;
@@ -82,15 +89,17 @@
             justify-content: flex-end;
             width: 50%;
             color: white;
-            
+
             img {
                 width: 95%;
                 margin: 0 5%;
                 box-sizing: border-box;
             }
-            
+
             &-title {
                 margin: 0;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
                 @include font-size(44px);
                 line-height: 149%;
 
@@ -100,8 +109,11 @@
             }
 
             &-text {
+                font-family: 'Roboto', sans-serif;
+                font-weight: regular;
                 @include font-size(22px);
                 line-height: 2;
+
                 @media screen and(min-width: 1921px) {
                     @include vw-font-size(22, 1920, 1);
                 }
