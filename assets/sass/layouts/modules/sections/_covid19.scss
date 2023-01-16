@@ -1,0 +1,117 @@
+.tb-stop-covid19 {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        background: $tb-gold;
+        
+        @media screen and (max-width: 1023px) {
+            width: 0;
+        }
+    }
+    
+    
+    .after--box {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 50%;
+        top: 0;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            background: url('/assets/images/layout-stop-covid-tb_0.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+
+            @media screen and (max-width: 1023px) {
+                background: url('/assets/images/layout-stop-covid-tb_1.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 130%;
+                top: 0;
+            }
+
+            @media screen and (max-width: 639px) {
+                height: 100%;
+            }
+
+            @media screen and (max-width: 519px) {
+                background-size: contain;
+                background-position: unset;
+            }
+        }
+    }
+
+    &-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 30% 0 0 0;
+        box-sizing: border-box;
+
+        @media screen and(max-width: 1023px) {
+            flex-direction: column;
+            padding: 0;
+            &__item:nth-child(1) {
+                justify-content: center;
+                align-self: center;
+            }
+            &__item:nth-child(2) {
+                width: 100%;
+                background: $tb-gold;
+            }
+        }
+
+        &__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 50%;
+            color: white;
+            
+            img {
+                width: 95%;
+                margin: 0 5%;
+                box-sizing: border-box;
+            }
+            
+            &-title {
+                margin: 0;
+                @include font-size(44px);
+                line-height: 149%;
+
+                @media screen and(min-width: 1921px) {
+                    @include vw-font-size(44, 1920, 1);
+                }
+            }
+
+            &-text {
+                @include font-size(22px);
+                line-height: 2;
+                @media screen and(min-width: 1921px) {
+                    @include vw-font-size(22, 1920, 1);
+                }
+            }
+
+            &--add-img {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+
+    }
+}

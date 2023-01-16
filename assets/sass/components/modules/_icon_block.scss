@@ -1,0 +1,56 @@
+.tb-icon-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 924px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1921px) {
+        max-width: 83.69%;
+    }
+    @media screen and (max-width: 680px) {
+        @include vis_off;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 25%;
+    
+        &-img {
+            max-width: 117px;
+            width: 100%;
+    
+            @media screen and (min-width: 1921px) {
+                max-width: 50%;
+                min-width: 12.663%;
+            }
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    
+        &-title {
+            // max-width: 130px;
+            width: 100%;
+            text-align: center;
+
+            @include font-size(22px);
+                        
+            @media screen and (min-width: 1921px) {
+                @include vw-font-size(22, 1920, 1);
+            }
+    
+            p {
+                margin: 0;
+            }
+        }
+    
+    }
+}

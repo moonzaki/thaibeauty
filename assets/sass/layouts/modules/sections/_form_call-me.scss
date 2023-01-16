@@ -1,0 +1,202 @@
+.tb-form-call-me {
+
+    &-box {
+        display: flex;
+        flex-direction: row;
+        
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+
+            @media screen and (max-width: 1023px) {
+                width: 100%;    
+            }
+
+            &-form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 23px;
+
+                @media screen and (min-width: 1921px) {
+                    gap: 1.1vw;
+                }
+                @media screen and (max-width: 430px) {
+                    padding: 11px;
+                }
+
+            }
+
+            &-img {
+                width: 100%;
+
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.tb-form-call-me-box__item-form {
+    &__title {
+        max-width: 420px;
+        width: 100%;
+        margin: 0;
+        text-transform: uppercase;
+        @include font-size(30px);
+        
+        @media screen and (min-width: 1921px) {
+            // max-width: 75.8%;
+            min-width: 420px;
+            max-width: 100%;
+            @include vw-font-size(30, 1920, 1);
+        }
+    }
+    
+    &__subtitle {
+        max-width: 420px;
+        width: 100%;
+        font-style: italic;
+        @include font-size(25px);
+        
+        @media screen and (min-width: 1921px) {
+            // max-width: 75.8%;
+            min-width: 420px;
+            max-width: 100%;
+            @include vw-font-size(25, 1920, 1);
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    label {
+        max-width: 420px;
+        width: 100%;
+        
+        @media screen and (min-width: 1921px) {
+            // max-width: 75.8%;
+            min-width: 420px;
+            max-width: 100%;
+        }
+        
+
+        
+        .tb-f-name {
+            width: 100%;
+            height: 60px;
+            border: none;
+            box-sizing: border-box;
+            border-radius: 2.5vw;
+            -webkit-border-radius: 2.5vw;
+            -moz-border-radius: 2.5vw;
+            -ms-border-radius: 2.5vw;
+            -o-border-radius: 2.5vw;
+            
+            
+            @media screen and(min-width: 1921px) {
+                height: 3vw;
+            }
+
+            @media screen and (max-width: 1023px) {
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
+
+            &::placeholder {
+                display: block;
+                text-align: center;
+                @include font-size(25px);
+                
+                @media screen and (min-width: 1921px) {
+                    @include vw-font-size(25, 1920, 1);
+                }
+            }
+        }
+
+        .tb-f-mobile {
+            width: 100%;
+            height: 60px;
+            border: none;
+            box-sizing: border-box;
+            border-radius: 2.5vw;
+            -webkit-border-radius: 2.5vw;
+            -moz-border-radius: 2.5vw;
+            -ms-border-radius: 2.5vw;
+            -o-border-radius: 2.5vw;
+            
+            @media screen and (min-width: 1921px) {
+                height: 3vw;
+            }
+
+            @media screen and (max-width: 1023px) {
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+}
+
+            &:focus-visible {
+                outline: none;
+            }
+
+            &::placeholder {
+                display: block;
+                text-align: center;
+                @include font-size(25px);
+                
+                @media screen and (min-width: 1921px) {
+                    @include vw-font-size(25, 1920, 1);
+                }
+            }
+        }
+        
+    }
+    .confidencial {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        @include font-size(18px);
+                        
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(18, 1920, 1);
+        }
+
+        .tb-checkbox {
+            width: 21px;
+            height: 21px;
+
+            @media screen and (min-width: 1921px) {
+                width: 1.1vw;
+                height: 1.1vw;
+            }
+        }
+
+        a {
+            color: $tb-gold;
+        }
+    }
+}
+
+.tb-form-call-me-box__item.tb-form-call-me-box__item--add-img {        
+    @media screen and (max-width: 1023px) {
+        display: none;    
+    }
+}

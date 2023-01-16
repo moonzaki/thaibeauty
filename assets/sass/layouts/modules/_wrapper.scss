@@ -1,0 +1,37 @@
+body {
+    background: url('../../assets/images/layout-tb.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.tb-wrapper {
+
+    &-service,
+    &-effects,
+    &-when-do,
+    &-who-do,
+    &-certificates,
+    &-form-call-me,
+    &-recomm,
+    &-yandex-rating,
+    &-stop-covid19,
+    &-cont,
+    &-about-mass {
+        max-width: 1104px;
+        margin: 0 auto;
+        
+        @media screen and (min-width: 1921px) {
+            max-width: 66.66%;
+        }
+        
+    }
+    
+    @media screen and (max-width: 930px) {
+        &-service {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+}

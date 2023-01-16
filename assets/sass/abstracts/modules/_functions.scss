@@ -1,0 +1,3 @@
+@function percent-size($base, $box) {
+    @return calc($base * 100% / $box);
+}

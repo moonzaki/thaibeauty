@@ -1,0 +1,42 @@
+.button {
+    max-width: 260px;
+    width: 100%;
+    height: 60px;
+    border: 3px solid $tb-gold;
+    background: none;
+    border-radius: 2.5vw;
+    -webkit-border-radius: 2.5vw;
+    -moz-border-radius: 2.5vw;
+    -ms-border-radius: 2.5vw;
+    -o-border-radius: 2.5vw;
+    text-transform: uppercase;
+    @include font-size(25px);
+    color: $tb-gold;
+    &--call-me {
+        max-width: 100%;
+        background: $tb-gold;
+        color: white;
+
+    }
+
+    @media screen and(min-width: 1921px) {
+        max-width: percent-size(260, 460);
+        min-height: 60px;
+        height: 100%;
+        @include vw-font-size(25, 1920, 1);
+
+        &--call-me {
+            max-width: 100%;
+            width: 100%;
+            height: 3vw;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+}
