@@ -69,11 +69,19 @@
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
+
+        &--recomm-choice {
+            height: 60px;
+        }
     }
 
     @media screen and (max-width: 480px) {
         &--call-me {
             max-width: 340px;
+        }
+
+        &--recomm-choice {
+            height: 35px;
         }
     }
 }

@@ -11,7 +11,28 @@ body {
 
 .tb-wrapper {
 
-    &-service,
+    &-service {
+        max-width: 1104px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1921px) {
+            max-width: 66.66%;
+        }
+
+        @media screen and (max-width: 1080px) {
+            margin: 20px;
+            box-sizing: border-box;
+        }
+        @media screen and (max-width: 930px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 680px) {
+            margin: 10px;
+            box-sizing: border-box;
+        }
+    }
+
     &-effects,
     &-when-do,
     &-certificates,
@@ -28,18 +49,18 @@ body {
             max-width: 66.66%;
         }
 
+        @media screen and (max-width: 1080px) {
+            margin: 20px;
+            box-sizing: border-box;
+        }
+        @media screen and (max-width: 680px) {
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
     }
 
     &-who-do {
         width: 100%;
     }
-
-
-    @media screen and (max-width: 930px) {
-        &-service {
-            width: 100%;
-            margin: 0 auto;
-        }
-    }
-
 }

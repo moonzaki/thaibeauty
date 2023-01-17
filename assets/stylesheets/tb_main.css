@@ -147,10 +147,16 @@
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
   }
+  .button--recomm-choice {
+    height: 60px;
+  }
 }
 @media screen and (max-width: 480px) {
   .button--call-me {
     max-width: 340px;
+  }
+  .button--recomm-choice {
+    height: 35px;
   }
 }
 
@@ -356,6 +362,11 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .tb-service::before {
+    background: none;
   }
 }
 .tb-service__flex-3 {
@@ -1692,7 +1703,7 @@
 }
 .tb-recomm-box__list-item {
   border-radius: 25px;
-  background: rgba(240, 236, 234, 0.5333333333);
+  background: white;
 }
 @media screen and (min-width: 1921px) {
   .tb-recomm-box__list-item {
@@ -2497,21 +2508,54 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-.tb-wrapper-service, .tb-wrapper-effects, .tb-wrapper-when-do, .tb-wrapper-certificates, .tb-wrapper-form-call-me, .tb-wrapper-recomm, .tb-wrapper-yandex-rating, .tb-wrapper-stop-covid19, .tb-wrapper-cont, .tb-wrapper-about-mass {
+.tb-wrapper-service {
   max-width: 1104px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1921px) {
-  .tb-wrapper-service, .tb-wrapper-effects, .tb-wrapper-when-do, .tb-wrapper-certificates, .tb-wrapper-form-call-me, .tb-wrapper-recomm, .tb-wrapper-yandex-rating, .tb-wrapper-stop-covid19, .tb-wrapper-cont, .tb-wrapper-about-mass {
+  .tb-wrapper-service {
     max-width: 66.66%;
   }
 }
-.tb-wrapper-who-do {
-  width: 100%;
+@media screen and (max-width: 1080px) {
+  .tb-wrapper-service {
+    margin: 20px;
+    box-sizing: border-box;
+  }
 }
 @media screen and (max-width: 930px) {
   .tb-wrapper-service {
     width: 100%;
     margin: 0 auto;
   }
+}
+@media screen and (max-width: 680px) {
+  .tb-wrapper-service {
+    margin: 10px;
+    box-sizing: border-box;
+  }
+}
+.tb-wrapper-effects, .tb-wrapper-when-do, .tb-wrapper-certificates, .tb-wrapper-form-call-me, .tb-wrapper-recomm, .tb-wrapper-yandex-rating, .tb-wrapper-stop-covid19, .tb-wrapper-cont, .tb-wrapper-about-mass {
+  max-width: 1104px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1921px) {
+  .tb-wrapper-effects, .tb-wrapper-when-do, .tb-wrapper-certificates, .tb-wrapper-form-call-me, .tb-wrapper-recomm, .tb-wrapper-yandex-rating, .tb-wrapper-stop-covid19, .tb-wrapper-cont, .tb-wrapper-about-mass {
+    max-width: 66.66%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .tb-wrapper-effects, .tb-wrapper-when-do, .tb-wrapper-certificates, .tb-wrapper-form-call-me, .tb-wrapper-recomm, .tb-wrapper-yandex-rating, .tb-wrapper-stop-covid19, .tb-wrapper-cont, .tb-wrapper-about-mass {
+    margin: 20px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 680px) {
+  .tb-wrapper-effects, .tb-wrapper-when-do, .tb-wrapper-certificates, .tb-wrapper-form-call-me, .tb-wrapper-recomm, .tb-wrapper-yandex-rating, .tb-wrapper-stop-covid19, .tb-wrapper-cont, .tb-wrapper-about-mass {
+    margin: 10px;
+    box-sizing: border-box;
+  }
+}
+.tb-wrapper-who-do {
+  width: 100%;
 }/*# sourceMappingURL=tb_main.css.map */
