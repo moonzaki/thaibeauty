@@ -8,7 +8,7 @@
         border: 3px solid #b39658;
         box-sizing: border-box;
 
-        @media screen and (max-width: 680px) {
+        @media screen and (max-width: 800px) {
             flex-direction: column;
             align-items: center;
             text-align: center;
@@ -23,7 +23,7 @@
         &__img {
             width: 50%;
 
-            @media screen and (max-width: 680px) {
+            @media screen and (max-width: 800px) {
                 width: 100%;
             }
 
@@ -54,7 +54,7 @@
                 @include vw-font-size(27, 1920, 1);
             }
 
-            @media screen and (max-width: 680px) {
+            @media screen and (max-width: 800px) {
                 width: 100%;
             }
         }

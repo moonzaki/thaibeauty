@@ -16,13 +16,32 @@
     @include font-size(25px);
     color: $tb-gold;
 
+    &:hover {
+        background: $tb-gold;
+        color: white;
+    }
+
     &--call-me {
-        // max-width: 100%;
         max-width: 420px;
 
         background: $tb-gold;
         color: white;
 
+        &:hover {
+            background: none;
+            color: $tb-gold;
+        }
+
+    }
+
+    &--recomm-choice {
+        max-width: 320px;
+        height: 85px;
+        font-family: 'TimesNewRoman';
+        font-weight: bold;
+        font-stretch: condensed;
+        @include font-size(36px);
+        text-transform: capitalize;
     }
 
     @media screen and(min-width: 1921px) {
@@ -32,9 +51,15 @@
         @include vw-font-size(25, 1920, 1);
 
         &--call-me {
-            max-width: 100%;
+            max-width: 83.33%;
             width: 100%;
             height: 3vw;
+        }
+
+        &--recomm-choice {
+            min-height: 85px;
+            height: 100%;
+            @include vw-font-size(36, 1920, 1);
         }
     }
 

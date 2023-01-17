@@ -1,0 +1,189 @@
+.tb-recomm {}
+
+.tb-recomm-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &-text {
+            flex-grow: 1;
+            margin: 0;
+            @include font-size(50px);
+
+            @media screen and (min-width: 1921px) {
+                @include vw-font-size(50, 1920, 1);
+            }
+        }
+
+        &-clear {
+            flex-grow: 0.2;
+            color: $tb-gold;
+            @include font-size(20px);
+            text-transform: uppercase;
+            text-align: center;
+
+            @media screen and (min-width: 1921px) {
+                @include vw-font-size(20, 1920, 1);
+            }
+
+
+            p {
+                margin: 0;
+            }
+
+            svg {
+                width: 61px;
+
+                @media screen and (min-width: 1921px) {
+                    width: 15%;
+                    height: auto;
+                }
+
+                @media screen and (min-width: 2561px) {
+                    width: 25%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        width: 100%;
+        column-gap: 25px;
+    }
+
+    &__list {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-radius: 25px;
+
+        @media screen and (min-width: 1921px) {
+            border-radius: 1.5vw;
+        }
+
+        &-item {
+            border-radius: 25px;
+
+            background: #f0ecea;
+
+            @media screen and (min-width: 1921px) {
+                border-radius: 1.5vw;
+            }
+        }
+    }
+
+    &__close {
+
+        &-left {}
+
+        &-text {}
+
+        &-right {}
+    }
+}
+
+.tb-recomm-block {
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+
+    &__title {
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+        @include font-size(36px);
+        font-weight: 100;
+        line-height: 131.49%;
+        text-transform: uppercase;
+        color: #464646;
+        text-align: left;
+
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(36, 1920, 1);
+        }
+    }
+
+    &__list {
+        padding: 0;
+        list-style: none;
+
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &-time {
+            width: 33.33%;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            @include font-size(30px);
+            line-height: 131.49%;
+            text-align: left;
+            // text-transform: uppercase;
+            color: #B2965C;
+
+            @media screen and (min-width: 1921px) {
+                @include vw-font-size(30, 1920, 1);
+            }
+        }
+
+        &-name {
+            width: 33.33%;
+            color: #464646;
+            text-align: center;
+        }
+
+        &-price {
+            width: 33.33%;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            @include font-size(30px);
+            line-height: 131.49%;
+            text-align: right;
+            text-transform: uppercase;
+            color: #B2965C;
+
+            @media screen and (min-width: 1921px) {
+                @include vw-font-size(30, 1920, 1);
+            }
+        }
+    }
+}
+
+.tb-recomm-name {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #464646;
+    margin: 0 auto;
+    box-shadow: 0 0 1px 0 #464646;
+    border-radius: 2px;
+
+    @media screen and (min-width: 1921px) {
+        width: 2vw;
+        height: 0.2vw;
+    }
+
+    &--no-name {}
+
+    &--add-name {}
+}

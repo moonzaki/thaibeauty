@@ -10,7 +10,6 @@ body {
     &-service,
     &-effects,
     &-when-do,
-    &-who-do,
     &-certificates,
     &-form-call-me,
     &-recomm,
@@ -20,13 +19,18 @@ body {
     &-about-mass {
         max-width: 1104px;
         margin: 0 auto;
-        
+
         @media screen and (min-width: 1921px) {
             max-width: 66.66%;
         }
-        
+
     }
-    
+
+    &-who-do {
+        width: 100%;
+    }
+
+
     @media screen and (max-width: 930px) {
         &-service {
             width: 100%;
