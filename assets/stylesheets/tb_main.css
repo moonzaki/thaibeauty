@@ -2348,6 +2348,21 @@
   height: auto;
 }
 
+.tb-about-mass {
+  position: relative;
+}
+.tb-about-mass::before {
+  position: absolute;
+  content: "";
+  background: url("../../assets/images/layout-about-tb_0.png");
+  width: 100%;
+  height: 100%;
+  bottom: 7%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
 .tb-about-mass-box {
   padding: 90px 0 0;
   display: flex;
@@ -2357,6 +2372,8 @@
 .tb-about-mass-box__ending {
   padding: 50px 24px 75px;
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: regular;
   background: #b39658;
   color: white;
   line-height: 1.5;
@@ -2448,6 +2465,20 @@
   width: 50%;
   padding: 0 1em;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: regular;
+  line-height: 1.5;
+  font-size: calc(1.2625rem + 0.15vw);
+}
+@media (min-width: 1200px) {
+  .tb-about-mass-box__item-text-list-item {
+    font-size: 1.375rem;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .tb-about-mass-box__item-text-list-item {
+    font-size: 1.1458333333vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .tb-about-mass-box__item-text-list-item {
