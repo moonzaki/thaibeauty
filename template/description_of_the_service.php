@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: О преподавателях
+Template Name: Новая карточка услуги
 */
 
 add_filter('body_class','services_body_class');
@@ -489,7 +489,7 @@ $image_url          = wp_get_attachment_image_src( $image_id, 'large' )[0];
     <section class="tb-parking">
         <div class="tb-wrapper-parking">
             <div class="tb-parking-box">
-                <h2 class="tb-parking-box__title">Бесплатная паркковка - без шлагбаума!</h2>
+                <h2 class="tb-parking-box__title">Бесплатная парковка - без шлагбаума!</h2>
                 <div class="tb-parking-box__img">
                     <picture>
                         <source srcset="<?php echo get_template_directory_uri()?>/assets/images/parking.png" media="(min-width:530px)">
