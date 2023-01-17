@@ -1,4 +1,6 @@
-.tb-recomm {}
+.tb-recomm {
+    margin: 0 0 55px;
+}
 
 .tb-recomm-box {
     display: flex;
@@ -34,14 +36,16 @@
             @media screen and (min-width: 1921px) {
                 @include vw-font-size(20, 1920, 1);
             }
-
-
+            
+            
             p {
+                cursor: pointer;
                 margin: 0;
             }
-
+            
             svg {
                 width: 61px;
+                cursor: pointer;
 
                 @media screen and (min-width: 1921px) {
                     width: 15%;
@@ -57,6 +61,8 @@
     }
 
     &__button {
+        padding: 72px 0 0;
+        margin: 0 0 72px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -67,6 +73,7 @@
 
     &__list {
         width: 100%;
+
         margin: 0;
         padding: 0;
         list-style: none;
@@ -79,7 +86,7 @@
         &-item {
             border-radius: 25px;
 
-            background: #f0ecea;
+            background: #f0ecea88;
 
             @media screen and (min-width: 1921px) {
                 border-radius: 1.5vw;
@@ -87,14 +94,14 @@
         }
     }
 
-    &__close {
+    // &__close {
 
-        &-left {}
+    //     // &-left {}
 
-        &-text {}
+    //     // &-text {}
 
-        &-right {}
-    }
+    //     // &-right {}
+    // }
 }
 
 .tb-recomm-block {
@@ -118,7 +125,7 @@
     }
 
     &__list {
-        padding: 0;
+        padding: 70px 0 0;
         list-style: none;
 
     }
@@ -183,7 +190,7 @@
         height: 0.2vw;
     }
 
-    &--no-name {}
+    // &--no-name {}
 
-    &--add-name {}
+    // &--add-name {}
 }

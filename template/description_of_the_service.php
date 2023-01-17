@@ -20,8 +20,25 @@ $image_url          = wp_get_attachment_image_src( $image_id, 'large' )[0];
 
 ?>
 
-<main>
+<main class="tb-main">
     <section class="tb-service">
+        <span class="tb-t" style="display: block;">t</span>
+        <span class="tb-b" style="display: block;">b</span>
+        <span class="tb-s" style="display: block;">s</span>
+        <div class="tb-specials__content_left">
+            <a href="/specpredlozheniya/tekushchie-akcii/" class="tb-specials__title specials__title--1  active">
+                <span class="specials__title-num tb-specials__title-num">01</span>
+                <span class="specials__title-num tb-specials__title-text">Наши<br>акции</span>
+            </a>
+            <a href="/specpredlozheniya/nashi-abonementy/" class="tb-specials__title specials__title--2">
+                <span class="specials__title-num tb-specials__title-num">02</span>
+                <span class="specials__title-num tb-specials__title-text">Наши<br>абонементы</span>
+            </a>
+            <a href="/sertifikaty/podarochnye-sertifikaty/" class="tb-specials__title specials__title--3">
+                <span class="specials__title-num tb-specials__title-num">03</span>
+                <span class="specials__title-num tb-specials__title-text">Подарки нашим<br>гостям</span>
+            </a>
+        </div>
         <div class="tb-wrapper-service">
             <div class="tb-service-box">
                 <div class="tb-service-box__block">
@@ -78,7 +95,7 @@ $image_url          = wp_get_attachment_image_src( $image_id, 'large' )[0];
                         <div class="tb-service-box__img">
                             <picture>
                                 <source srcset="<?php echo get_template_directory_uri()?>/assets/images/0_1.png" media="(max-width:680px)">
-                                <source srcset="<?php echo get_template_directory_uri()?>/assets/images/0_01.png" media="(max-width:930px)">
+                                <source srcset="<?php echo get_template_directory_uri()?>/assets/images/0_01.png" media="(max-width:1080px)">
                                 <img src="<?php echo get_template_directory_uri()?>/assets/images/0.png" alt="">
                             </picture>
                         </div>
@@ -595,7 +612,14 @@ $image_url          = wp_get_attachment_image_src( $image_id, 'large' )[0];
         </div>
     </section>
 </main>
-
+<script>
+document.addEventListener('DOMContentLoaded', ()=> {
+	document.querySelector('body').style.background = 'url("https://thaibeauty.webcorptest.ru/wp-content/themes/foghorn/assets/images/layout-tb.png")';
+	document.querySelector('body').style.backgroundRepeat = 'no-repeat';
+   	document.querySelector('body').style.backgroundSize = 'cover';
+	document.querySelector('body').style.overflowY = 'scroll';
+});
+</script>
 <?php
 
 wp_reset_postdata();

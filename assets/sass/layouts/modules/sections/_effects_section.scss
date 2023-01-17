@@ -9,6 +9,7 @@
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
         text-align: center;
+        margin: 0 0 45px;
 
         @include font-size(36px);
 
@@ -51,7 +52,7 @@
     font-weight: regular;
     @include font-size(22px);
     line-height: 1.5;
-
+    padding: 0 0 100px;
     @media screen and (min-width: 1921px) {
         @include vw-font-size(22, 1920, 1);
     }
@@ -63,7 +64,7 @@
         flex-direction: row;
         gap: 20px;
         width: 100%;
-
+        padding: 90px 0 0;
         @media screen and (max-width: 930px) {
             flex-direction: column;
         }
@@ -138,7 +139,7 @@
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-
+        padding: 90px 0 0;
         font-family: 'RobotoCondensed', sans-serif;
         font-weight: bold;
         @include font-size(25px);

@@ -1,10 +1,65 @@
 .tb-service {
-    // background: url('../../assets/images/layout-service-tb_1.png');
-    // background-size: cover;
-    // background-position: bottom;
-    // background-repeat: no-repeat;
 
-    // position: relative;
+    .tb-t {
+        position: absolute;
+        z-index: -1;
+        font-family: Times New Roman,Times,serif;
+        font-weight: bold;
+        color: #b39658;
+        left: 10%;
+        top: 46%;
+        @include font-size(83px);
+        text-transform: uppercase;
+
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(83, 1920, 1);
+        }
+
+        @media screen and (max-width: 1080px) {
+            @include vis_off;
+        }
+    }
+
+    .tb-b {
+        position: absolute;
+        z-index: -1;
+        font-family: Times New Roman,Times,serif;
+        font-weight: bold;
+        color: #b3965866;
+        left: 63%;
+        top: 1%;
+
+        @include font-size(57px);
+        text-transform: uppercase;
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(57, 1920, 1);
+        }
+
+        @media screen and (max-width: 1080px) {
+            @include vis_off;
+        }
+    }
+
+    .tb-s {
+        position: absolute;
+        z-index: -1;
+        font-family: Times New Roman,Times,serif;
+        font-weight: bold;
+        color: #b3965866;
+        right: 10%;
+        top: 15%;
+
+        @include font-size(138px);
+        text-transform: uppercase;
+        
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(138, 1920, 1);
+        }
+        
+        @media screen and (max-width: 1080px) {
+            @include vis_off;
+        }
+    }
 
     &::before {
         position: absolute;
@@ -53,7 +108,13 @@
 }
 
 .tb-service-box {
+    padding: 188px 0 55px;
+    box-sizing: border-box;
 
+    @media screen and (max-width: 1080px) {
+        padding: 30px 0 60px;
+    }
+    
     &__block {
         display: flex;
         flex-direction: row;
@@ -62,11 +123,17 @@
         justify-content: center;
         width: 100%;
         text-align: center;
-
+        
         &-item:nth-child(1) {
             width: 100%;
+            gap: 25px;
+            margin: 0 0 55px;
         }
 
+        &-item:nth-child(2) {
+            gap: 34px;
+        }
+        
         &-item:nth-child(4) {
             display: none;
         }
@@ -103,7 +170,7 @@
                 width: calc(50% - 40px);
             }
 
-            @media screen and (max-width: 930px) {
+            @media screen and (max-width: 1080px) {
                 padding: 0;
                 width: 100%;
                 justify-content: center;
@@ -152,7 +219,7 @@
             max-width: 73.33%;
         }
 
-        @media screen and (max-width: 930px) {
+        @media screen and (max-width: 1080px) {
             max-width: 100%;
         }
 
@@ -175,13 +242,17 @@
             @include vw-font-size(22, 1920, 1);
         }
 
-        @media screen and (max-width: 930px) {
+        @media screen and (max-width: 1080px) {
             justify-content: center;
             text-align: center;
         }
 
         @media screen and (max-width: 680px) {
             @include vis_off;
+        }
+
+        p {
+            margin: 0;
         }
 
 
@@ -196,7 +267,7 @@
             max-width: 97.102%;
         }
 
-        @media screen and (max-width: 930px) {
+        @media screen and (max-width: 1080px) {
             max-width: 100%;
         }
 

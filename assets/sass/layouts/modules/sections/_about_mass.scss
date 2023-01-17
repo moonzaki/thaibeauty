@@ -1,11 +1,13 @@
 .tb-about-mass {
     &-box {
+        padding: 90px 0 0;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         &__ending {
-            padding: 0 24px;
+            padding: 50px 24px 75px;
+            margin: 0;
             background: #b39658;
             color: white;
             line-height: 1.5;
@@ -19,6 +21,10 @@
             @media screen and (max-width: 767px) {
                 color: black;
             }
+
+            p {
+                margin: 0;
+            }
         }
     }
 }
@@ -28,9 +34,11 @@
     box-sizing: border-box;
 
     &-text {
-
+        margin: 0 0 45px;
         &-title {
+            
             width: 100%;
+            margin: 0 0 30px;
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
             line-height: 1.5;
@@ -43,6 +51,7 @@
 
         &-description {
             width: 100%;
+            margin: 0;
             font-family: 'Roboto', sans-serif;
             font-weight: regular;
             line-height: 1.5;
