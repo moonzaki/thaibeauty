@@ -26,9 +26,10 @@
             height: 90%;
             min-height: 856px;
             max-height: unset;
+            max-height: 100%;
             background-repeat: no-repeat;
             background-position: top;
-            background-size: cover;
+            background-size: contain;
 
         }
     }
@@ -288,11 +289,28 @@
     }
 
     &__title {
+        position: relative;
         margin: 0;
         @include font-size(30px);
 
         @media screen and (min-width: 1921px) {
             @include vw-font-size(30, 1920, 1.5);
+        }
+
+        &::after {
+            position: absolute;
+            content: 'РУБ';
+            width: auto;
+            height: auto;
+            font-family: 'Roboto', sans-serif;
+            font-weight: regular;
+            font-stretch: condensed;
+            @include font-size(16px);
+            color: $tb-gold;
+
+            @media screen and (min-width: 1921px) {
+                font-size: 1.2vw;
+            }
         }
     }
 }

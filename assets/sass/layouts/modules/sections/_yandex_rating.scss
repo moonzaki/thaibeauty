@@ -15,6 +15,11 @@
             border: none;
         }
 
+        @media screen and (max-width: 380px) {
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
         &__img {
             width: 50%;
 

@@ -17,7 +17,9 @@
     color: $tb-gold;
 
     &--call-me {
-        max-width: 100%;
+        // max-width: 100%;
+        max-width: 420px;
+
         background: $tb-gold;
         color: white;
 
@@ -42,5 +44,11 @@
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+        &--call-me {
+            max-width: 340px;
+        }
     }
 }

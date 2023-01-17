@@ -1,18 +1,18 @@
 .tb-stop-covid19 {
     position: relative;
 
-    &::before {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 75%;
-        bottom: 0;
-        background: $tb-gold;
+    // &::before {
+    //     position: absolute;
+    //     content: '';
+    //     width: 100%;
+    //     height: 75%;
+    //     bottom: 0;
+    //     background: $tb-gold;
 
-        @media screen and (max-width: 1023px) {
-            width: 0;
-        }
-    }
+    //     @media screen and (max-width: 1053px) {
+    //         width: 0;
+    //     }
+    // }
 
 
     .after--box {
@@ -39,20 +39,24 @@
             background-size: cover;
             z-index: -1;
 
-            @media screen and (max-width: 1023px) {
+            @media screen and (max-width: 1053px) {
                 background: url('/assets/images/layout-stop-covid-tb_1.png');
                 background-repeat: no-repeat;
                 background-position: center;
+                background-position-x: 47%;
                 background-size: cover;
-                height: 140%;
-                top: 0;
+                height: 145%;
+                // top: 0;
+                bottom: -85%;
             }
 
             @media screen and (max-width: 639px) {
                 height: 140%;
             }
-
+            
             @media screen and (max-width: 519px) {
+                bottom: unset;
+                top: 0;
                 background-size: contain;
                 background-position: unset;
             }
@@ -67,7 +71,30 @@
         // padding: 30% 0 0 0;
         box-sizing: border-box;
 
-        @media screen and(max-width: 1023px) {
+
+
+        &__item:nth-child(2) {
+
+            align-self: center;
+            padding: 15% 0 0;
+            
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 75%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: $tb-gold;
+                z-index: -1;
+                @media screen and (max-width: 1053px) {
+                    width: 0;
+                }
+            }
+        }
+
+        @media screen and(max-width: 1053px) {
             flex-direction: column;
             padding: 0;
 
@@ -78,26 +105,38 @@
 
             &__item:nth-child(2) {
                 width: 100%;
+                padding: 0;
                 background: $tb-gold;
             }
         }
 
         &__item {
-            position: relative;
+            // position: relative;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            height: fit-content;
+            align-self: end;
             width: 50%;
             color: white;
+            
+            @media screen and (max-width: 1053px) {
+                text-align: center;
+
+                img {
+                    width: 110%;
+                }
+            }
 
             img {
-                width: 95%;
-                margin: 0 5%;
+                width: 100%;
+                margin: 0 auto;
                 box-sizing: border-box;
             }
 
             &-title {
                 margin: 0;
+                // padding: 0 16px;
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;
                 @include font-size(44px);
@@ -106,16 +145,37 @@
                 @media screen and(min-width: 1921px) {
                     @include vw-font-size(44, 1920, 1);
                 }
+
+                @media screen and (max-width: 1053px) {
+                    @include font-size(66px);
+                }
+
             }
 
             &-text {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 0 0 16px;
                 font-family: 'Roboto', sans-serif;
                 font-weight: regular;
                 @include font-size(22px);
-                line-height: 2;
-
+                line-height: 1.5;
+                box-sizing: border-box;
                 @media screen and(min-width: 1921px) {
                     @include vw-font-size(22, 1920, 1);
+                }
+
+                @media screen and (max-width: 1053px) {
+                    padding: 0 25px 25px;
+                }
+
+                @media screen and (max-width: 530px) {
+                    gap: 10px;
+                }
+
+                p {
+                    margin: 0;
                 }
             }
 
