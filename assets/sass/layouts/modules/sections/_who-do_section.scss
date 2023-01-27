@@ -3,6 +3,7 @@
     width: 100%;
     justify-content: center;
     overflow: hidden;
+    margin: 0 0 100px;
 
 
     &__item:nth-child(1) {
@@ -93,6 +94,7 @@
         a {
             color: $tb-gold;
             text-transform: uppercase;
+            text-decoration: underline;
 
             @include font-size(25px);
 
@@ -104,7 +106,7 @@
 
     &__list {
         font-family: 'Roboto', sans-serif;
-        font-weight: regular;
+        font-weight: 500;
 
         @include font-size(18px);
 

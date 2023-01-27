@@ -1,0 +1,148 @@
+.tb-when-do {
+    margin: 0 0 90px;
+}
+
+.tb-when-do-box {
+    text-align: center;
+
+    &__title {
+        margin: 0 0 53px;
+        padding: 17px 0 0;
+        @include font-size(40px);
+        text-transform: uppercase;
+        color: $tb-gold;
+
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(40, 1920, 1);
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+
+        @include font-size(36px);
+
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(36, 1920, 1);
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 36px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        @include font-size(22px);
+        text-align: left;
+        list-style: none;
+        line-height: 1.5;
+
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(22, 1920, 1);
+            row-gap: 1.5vw;
+        }
+
+        @media screen and (max-width: 930px) {
+            padding: 0 30px;
+            box-sizing: border-box;
+            row-gap: 24px;
+        }
+
+        @media screen and (max-width: 430px) {
+            padding: 0 15px;
+        }
+
+        &__item {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0 0 0 1.4vw;
+            width: calc(33.33% - 1.4vw);
+            box-sizing: border-box;
+            border-left: 3px solid #b39658;
+
+            p {
+                margin: 0;
+            }
+
+        }
+
+        &__item:nth-child(1) {
+            width: 37%;
+        }
+
+        &__item:nth-child(2) {
+            width: 37%;
+        }
+
+        &__item:nth-child(3) {
+            width: 26%;
+        }
+
+        &__item:nth-child(4) {
+            width: 37%;
+        }
+
+        &__item:nth-child(5) {
+            width: 37%;
+        }
+
+        &__item:nth-child(6) {
+            width: 26%;
+        }
+
+        @media screen and (max-width: 680px) {
+            &__item:nth-child(1) {
+                width: 50%;
+            }
+
+            &__item:nth-child(2) {
+                width: 50%;
+            }
+
+            &__item:nth-child(3) {
+                width: 50%;
+            }
+
+            &__item:nth-child(4) {
+                width: 50%;
+            }
+
+            &__item:nth-child(5) {
+                width: 50%;
+            }
+
+            &__item:nth-child(6) {
+                width: 50%;
+            }
+        }
+
+    }
+
+    &__contraindications {
+        padding: 46px 0 0;
+        font-family: 'RobotoCondensed', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-stretch: condensed;
+        @include font-size(25px);
+
+        a {
+            color: $tb-gold;
+        }
+
+        @media screen and (min-width: 1921px) {
+            @include vw-font-size(25, 1920, 1);
+        }
+
+        @media screen and (max-width: 930px) {
+            text-align: center;
+        }
+    }
+}

@@ -113,14 +113,14 @@
         &__subtitle-mobile {
             margin: 0;
             font-family: 'Roboto', sans-serif;
-            font-weight: regular;
+            font-weight: 500;
             @include font-size(20px);
             text-transform: uppercase;
         }
 
         &__subcont-mobile {
             font-family: 'Roboto', sans-serif;
-            font-weight: regular;
+            font-weight: 500;
             @include font-size(20px);
 
             p {

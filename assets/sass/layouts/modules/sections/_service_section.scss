@@ -238,8 +238,8 @@
         text-align: right;
         line-height: 1.5;
         font-family: 'Roboto', sans-serif;
-        font-weight: regular;
-        @include font-size(22px);
+        font-weight: 500;
+        @include font-size(21px);
 
         @media screen and (min-width: 1921px) {
             @include vw-font-size(22, 1920, 1);
@@ -377,7 +377,7 @@
             width: auto;
             height: auto;
             font-family: 'Roboto', sans-serif;
-            font-weight: regular;
+            font-weight: 500;
             font-stretch: condensed;
             @include font-size(16px);
             color: $tb-gold;

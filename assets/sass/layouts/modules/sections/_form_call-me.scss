@@ -91,7 +91,7 @@
         max-width: 420px;
         width: 100%;
         font-family: 'Roboto', sans-serif;
-        font-weight: regular;
+        font-weight: 500;
         font-style: italic;
         @include font-size(25px);
 
@@ -127,7 +127,7 @@
             text-align: center;
             padding: 0 20px;
             font-family: 'Roboto', sans-serif;
-            font-weight: regular;
+            font-weight: 500;
             color: black;
             @include font-size(25px);
             border: none;
@@ -160,7 +160,7 @@
                 display: block;
                 text-align: center;
                 font-family: 'Roboto', sans-serif;
-                font-weight: regular;
+                font-weight: 500;
                 color: black;
 
                 @include font-size(25px);
@@ -178,7 +178,7 @@
             padding: 0 20px;
             text-align: center;
             font-family: 'Roboto', sans-serif;
-            font-weight: regular;
+            font-weight: 500;
             color: black;
             @include font-size(25px);
 
@@ -211,7 +211,7 @@
                 display: block;
                 text-align: center;
                 font-family: 'Roboto', sans-serif;
-                font-weight: regular;
+                font-weight: 500;
                 color: black;
 
                 @include font-size(25px);
@@ -231,7 +231,7 @@
         gap: 13px;
         max-width: 100%;
         font-family: 'Roboto', sans-serif;
-        font-weight: regular;
+        font-weight: 500;
         @include font-size(18px);
         align-items: center;
 
