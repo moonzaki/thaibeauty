@@ -15,6 +15,10 @@
         @media screen and (min-width: 1921px) {
             @include vw-font-size(40, 1920, 1);
         }
+
+        @media screen and (max-width: 680px) {
+            padding: 24px 0 0;
+        }
     }
 
     &__subtitle {
@@ -54,7 +58,10 @@
             box-sizing: border-box;
             row-gap: 24px;
         }
-
+        @media screen and (max-width: 680px) {
+            row-gap: 35px;
+            font-weight: 400;
+        }
         @media screen and (max-width: 430px) {
             padding: 0 15px;
         }
@@ -128,13 +135,14 @@
 
     &__contraindications {
         padding: 46px 0 0;
-        font-family: 'RobotoCondensed', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
         font-weight: bold;
         text-transform: uppercase;
         font-stretch: condensed;
         @include font-size(25px);
 
         a {
+            text-decoration: underline;
             color: $tb-gold;
         }
 
@@ -144,6 +152,11 @@
 
         @media screen and (max-width: 930px) {
             text-align: center;
+        }
+
+        @media screen and (max-width: 680px) {
+            padding: 46px 15px 0;
+            text-align: left;
         }
     }
 }

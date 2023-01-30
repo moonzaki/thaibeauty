@@ -4,9 +4,12 @@
             margin: 0;
             text-transform: uppercase;
             text-align: center;
+            padding: 0 5px;
+            box-sizing: border-box;
 
             @include font-size(38px);
             color: $tb-gold;
+            
     
             @media screen and(min-width: 1921px) {
                 @include vw-font-size(38, 1920, 1);
@@ -14,9 +17,15 @@
         }
 
         &__img {
-            padding: 40px 0 0;
+            padding: 40px 5px 0;
             width: 100%;
+            display:flex; 
+            justify-content:center;
+            box-sizing:border-box;
             
+            @media screen and (max-width: 680px){
+                padding: 20px 5px 0;
+            }
             img {
                 width: 100%;
                 height: auto;

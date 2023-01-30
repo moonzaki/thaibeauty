@@ -5,6 +5,10 @@
     overflow: hidden;
     margin: 0 0 100px;
 
+    @media screen and (max-width: 680px) {
+        margin: 0 0 45px;
+    }
+
 
     &__item:nth-child(1) {
         width: 16.665%;
@@ -53,9 +57,12 @@
 .tb-who-do-box {
 
     position: relative;
-
-
     text-align: center;
+
+    @media screen and (max-width: 680px) {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__title {
         font-family: 'Roboto', sans-serif;
@@ -65,6 +72,10 @@
 
         @media screen and (min-width: 1921px) {
             @include vw-font-size(36, 1920, 1);
+        }
+        @media screen and (max-width: 680px) {
+            margin: 0 0 20px;
+            order: 1;
         }
     }
 
@@ -78,6 +89,11 @@
             max-width: unset;
         }
 
+        @media screen and (max-width: 680px) {
+            order: 2;
+            margin: 0 0 25px;
+        }
+
         img {
             width: 100%;
             height: auto;
@@ -87,9 +103,16 @@
 
     &__choice {
         padding: 60px 0 0;
-        font-family: 'RobotoCondensed', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
         font-weight: bold;
         font-stretch: condensed;
+
+        @media screen and (max-width: 680px) {
+            order: 3;
+            padding: 0 15px;
+            text-align: left;
+            margin: 0 0 39px;
+        }
 
         a {
             color: $tb-gold;
@@ -117,19 +140,28 @@
         @media screen and (min-width: 681px) {
             @include vis_off;
         }
+        
+        @media screen and (max-width: 680px) {
+            order: 4;
+        }
 
         ul {
             margin: 0;
             padding: 0;
             list-style: none;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
 
             li {
 
                 a {
-
+                    text-decoration: underline;
                     &:focus,
                     &:active,
                     &:visited {
+                        text-decoration: underline;
                         color: black;
                     }
                 }

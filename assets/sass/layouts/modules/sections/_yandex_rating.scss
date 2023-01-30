@@ -58,6 +58,10 @@
             @media screen and (max-width: 800px) {
                 width: 100%;
             }
+            
+            @media screen and (max-width: 680px) {
+                font-weight: 400;
+            }
         }
     }
 

@@ -1,5 +1,9 @@
 .tb-recomm {
     margin: 0 0 55px;
+
+    @media screen and (max-width: 680px) {
+        margin: 0 0 30px;
+    }
 }
 
 .tb-recomm-box {

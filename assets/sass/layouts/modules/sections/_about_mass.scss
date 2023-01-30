@@ -1,5 +1,6 @@
 .tb-about-mass {
     position: relative;
+
     &::before {
         position: absolute;
         content: '';
@@ -11,7 +12,6 @@
         background-repeat: no-repeat;
         background-size: contain;
         z-index: -1;
-        
     }
     
     &-box {
@@ -20,6 +20,10 @@
         flex-direction: column;
         align-items: center;
         
+        @media screen and (max-width: 680px){
+            padding: 50px 0 0;
+        }
+
         &__ending {
             padding: 50px 24px 75px;
             margin: 0;
@@ -37,6 +41,13 @@
 
             @media screen and (max-width: 767px) {
                 color: black;
+            }
+
+            @media screen and (max-width: 680px){
+                font-weight: 400;
+                @include font-size(16px);
+                background: #b39658 url('../../assets/images/layout-about-tb_1.png') no-repeat top;
+                background-size: cover;
             }
 
             p {
@@ -77,6 +88,11 @@
             @media screen and(min-width: 1921px) {
                 @include vw-font-size(22, 1920, 1);
             }
+
+            @media screen and (max-width: 680px){
+                font-weight: 400;
+                @include font-size(16px);
+            }
         }
 
         &-list {
@@ -84,7 +100,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             width: 100%;
-
+            padding: 0 25px;
             line-height: 1.5;
             @include font-size(21px);
             box-sizing: border-box;
@@ -113,6 +129,11 @@
                     p {
                         margin: 0;
                     }
+                }
+
+                @media screen and (max-width: 680px){
+                    font-weight: 400;
+                    @include font-size(16px);
                 }
 
                 p {

@@ -2,19 +2,29 @@
     margin: 0 0 120px;
     padding: 75px 0 0;
 
+    @media screen and (max-width: 680px) {
+        padding: 25px 0 0;
+        margin: 0 0 60px;
+    }
+
     &::before {
         position: absolute;
         content: "";
         width: 100%;
-        height: 100%;
+        height: 40%;
         background: url("../../assets/images/layout_recomm-tb_0.png");
         background-position-x: 0%;
         background-position-y: 0%;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: top;
         padding-top: 10%;
         z-index: -1;
+
+        @media screen and (max-width: 680px) {
+            background-size: 200%;
+            background-position: unset;
+        }
     }
 
     &-box {
@@ -102,6 +112,10 @@
             @include vw-font-size(25, 1920, 1);
         }
 
+        @media screen and (max-width: 680px) {
+            font-weight: 400;
+        }
+
         p {
             margin: 0;
         }
@@ -151,6 +165,7 @@
                 -ms-border-radius: 30px;
                 -o-border-radius: 30px;
             }
+            
 
             &:focus-visible {
                 outline: none;

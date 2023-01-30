@@ -11,6 +11,10 @@
 
 <body>
     <main class="tb-main">
+        <div class="tb-right-bar">
+            <span></span>
+            <div>Наверх</div>
+        </div>
         <section class="tb-service">
             <!-- <span class="tb-t" style="display: block;">t</span>
             <span class="tb-b" style="display: block;">b</span>
@@ -277,6 +281,7 @@
             </div>
         </section>
         <section class="tb-certificates">
+            <div class="tb-certificates__bg"></div>
             <div class="tb-wrapper-certificates">
                 <div class="tb-certificates-box">
                     <h2 class="tb-certificates-box__title">Бессрочные сертификаты в подарок</h2>
@@ -604,7 +609,51 @@
                 </div>
             </div>
         </section>
+        <section class="tb-pl">
+            <div class="tb-wrapper-pl">
+                <div class="tb-pl-box">
+                    <h2 class="tb-pl-box__title">Будем признательны если<br>
+                        вы оставите отзывы!</h2>
+                    <ul>
+                        <li>
+                            <a href="">Thaibeautyspa в 2gis</a>
+                        </li>
+                        <li>
+                            <a href="">Thaibeautyspa – Яндекс.карты</a>
+                        </li>
+                        <li>
+                            <a href="">Thaibeautyspa – Google.карты</a>
+                        </li>
+                        <li>
+                            <a href="">Thaibeautyspa на yell.ru</a>
+                        </li>
+                        <li>
+                            <a href="">Thaibeautyspa на zoon.ru</a>
+                        </li>
+                        <li>
+                            <a href="">Thaibeautyspa в tripadvisor</a>
+                        </li>
+                        <li>
+                            <a href="">Thaibeautyspa на flamp.ru</a>
+                        </li>
+                    </ul>
+                    <div class="tb-pl-box__up">Наверх</div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            let target = event.target;
+            if (document.querySelector('.tb-right-bar')) {
+                document.querySelector('.tb-right-bar').addEventListener('click', () => {
+                    document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
+                });
+            } else {
+                false;
+            }
+        });
+    </script>
 </body>
 
 </html>
