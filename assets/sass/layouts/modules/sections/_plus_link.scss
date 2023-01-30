@@ -1,5 +1,7 @@
 .tb-pl {
-    
+    @media screen and (min-width: 681px) {
+        @include vis_off;
+    }
 
     &-box {
         display: flex;
