@@ -654,6 +654,20 @@
             }
         });
     </script>
+    <script>
+
+        window.onscroll = function () {
+            var fixed = document.querySelector('.tb-right-bar');
+            var blockheight = document.querySelector('.tb-wrapper-service').clientHeight - 100;
+
+            if (window.pageYOffset > blockheight) {
+                fixed.classList.add('tb-right-bar--show');
+            } else {
+                fixed.classList.remove('tb-right-bar--show');
+            }
+        };
+
+    </script>
 </body>
 
 </html>
