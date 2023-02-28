@@ -121,7 +121,7 @@
         }
     }
 
-    label {
+    .tb-f-row {
         max-width: 420px;
         width: 100%;
 
@@ -153,7 +153,7 @@
             -o-border-radius: 2.5vw;
 
 
-            @media screen and(min-width: 1921px) {
+            @media screen and (min-width: 1921px) {
                 height: 3vw;
                 @include vw-font-size(25, 1920, 1);
             }

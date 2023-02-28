@@ -23,13 +23,15 @@
 
     &--call-me {
         max-width: 420px;
-
+        height: 60px !important;
         background: $tb-gold;
         color: white;
+        @include font-size(25px);
 
         &:hover {
             background: none;
             color: $tb-gold;
+            border: 3px solid #b39658;
         }
 
     }
@@ -44,7 +46,7 @@
         text-transform: capitalize;
     }
 
-    @media screen and(min-width: 1921px) {
+    @media screen and (min-width: 1921px) {
         max-width: percent-size(260, 460);
         min-height: 60px;
         height: 100%;

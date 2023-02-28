@@ -353,7 +353,7 @@
 
             &-title {
                 margin: 0;
-
+                font-family: "Times New Roman";
                 @include font-size(40px);
                 color: $tb-gold;
 
@@ -376,7 +376,8 @@
 
             &-subtitle {
                 margin: 0;
-                @include font-size(16px);
+                // @include font-size(16px);
+                font-size: 0.9em !important;
                 color: $tb-gold;
 
                 @media screen and (min-width: 1921px) {

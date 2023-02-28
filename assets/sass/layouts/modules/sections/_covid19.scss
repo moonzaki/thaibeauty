@@ -98,7 +98,7 @@
             }
         }
 
-        @media screen and(max-width: 1053px) {
+        @media screen and (max-width: 1053px) {
             flex-direction: column;
             padding: 0;
 
@@ -146,7 +146,7 @@
                 @include font-size(44px);
                 line-height: 149%;
 
-                @media screen and(min-width: 1921px) {
+                @media screen and (min-width: 1921px) {
                     @include vw-font-size(44, 1920, 1);
                 }
 
@@ -167,7 +167,7 @@
                 line-height: 1.5;
                 box-sizing: border-box;
 
-                @media screen and(min-width: 1921px) {
+                @media screen and (min-width: 1921px) {
                     @include vw-font-size(22, 1920, 1);
                 }
 

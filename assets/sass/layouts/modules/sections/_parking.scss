@@ -11,7 +11,7 @@
             color: $tb-gold;
             
     
-            @media screen and(min-width: 1921px) {
+            @media screen and (min-width: 1921px) {
                 @include vw-font-size(38, 1920, 1);
             }
         }
